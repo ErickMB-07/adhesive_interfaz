@@ -1,5 +1,4 @@
-import sys
-sys.path.append('/mount/src/adhesive_interfaz')
+
 import streamlit as st
 import adhesive_code
 from PIL import Image
