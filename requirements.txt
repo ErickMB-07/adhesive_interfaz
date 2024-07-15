@@ -2,4 +2,5 @@ streamlit
 xgboost
 numpy
 shap
-statsmodel
+statsmodels
+seaborn
