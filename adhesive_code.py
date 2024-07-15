@@ -20,14 +20,6 @@ Change Log:
 
 -
 """
-%pip install xgboost
-%pip install numpy==1.25.2
-%pip install matplotlib
-%pip install shap
-%pip install sklearn
-%pip install seaborn
-%pip install statsmodels
-
 # Commented out IPython magic to ensure Python compatibility.
  #Imports
 import xgboost as xgb
