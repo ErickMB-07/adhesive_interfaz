@@ -1,4 +1,4 @@
-python -m pip install streamlit
+python -m install streamlit
 
 import streamlit as st
 import adhesive_code
