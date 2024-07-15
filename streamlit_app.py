@@ -1,4 +1,5 @@
-pip install streamlit
+!pip install streamlit
+
 import streamlit as st
 import adhesive_code
 from PIL import Image
