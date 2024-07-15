@@ -331,13 +331,10 @@ param_grid = {'learning_rate': [0.3],
               'max_depth':[2],
               'n_estimators': [200],
               'min_child_weight' : [2]}
-print(xgb_reg.get_params())
 grid_search = GridSearchCV(xgb_reg, param_grid, cv=K_fold,
                            scoring="r2",return_train_score=True
                            , verbose=1)
 grid_search.fit(XX_train_sca, YY_train)
-print(grid_search.best_params_)
-print(grid_search.best_estimator_)
 
 #============ Part 7: Validation of model with the testset
 final_model = grid_search.best_estimator_
