@@ -327,10 +327,10 @@ Validation_chart
 
 # ============ Part 5:Tuning of the candidate ML model - XGBoost
 # Checking for best hyperparameters with GridSearch
-param_grid = {'learning_rate': [0.1, 0.2, 0.3],
-              'max_depth':[2, 3, 4, 5],
-              'n_estimators': [20, 30, 50, 60, 80, 100, 120, 150, 180, 200],
-              'min_child_weight' : [2, 4, 5]}
+param_grid = {'learning_rate': [0.3],
+              'max_depth':[2],
+              'n_estimators': [200],
+              'min_child_weight' : [2]}
 print(xgb_reg.get_params())
 grid_search = GridSearchCV(xgb_reg, param_grid, cv=K_fold,
                            scoring="r2",return_train_score=True
