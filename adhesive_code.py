@@ -431,17 +431,14 @@ def app_adhesive(d_, hef_, ad_, fc_ad_, fc_, bar_, fu_):
       'bar' : bar_,
       'fu' : fu_
   }
-  print(f'data: {data}')
+  
   In_var = ['d', 'hef','ad', 'fc_ad', 'log_fc', 'bar', 'fu']
 
   datos_x = pd.DataFrame(data, index = [0])
-  print(f'datos_x: {datos_x}')
-
   sca_datos_x = pd.DataFrame(X_data_slr.transform(datos_x),columns = In_var)
-  print(f'sca_datos_x: {sca_datos_x}')
-
+  
   Nu_pred = final_model.predict(sca_datos_x)
-  print(Nu_pred)
+  
   Nu_pred_ = np.exp(Nu_pred)
 
   return Nu_pred_
